@@ -1,0 +1,6 @@
+framework module Pods_UmrohTask_UmrohTaskUITests {
+  umbrella header "Pods-UmrohTask-UmrohTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

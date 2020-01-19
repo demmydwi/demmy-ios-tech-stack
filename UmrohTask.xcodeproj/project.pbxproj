@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05B09988DEA3116FA1DE14C4 /* Pods_UmrohTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BD5928096E96CE42A75A73 /* Pods_UmrohTaskTests.framework */; };
+		0CAB7768AD29E0B790DD4D0E /* Pods_UmrohTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26722B8CB402C069F866EB25 /* Pods_UmrohTask.framework */; };
+		6E7E714423CF1404006394D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E714323CF1404006394D5 /* AppDelegate.swift */; };
+		6E7E714623CF1404006394D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E714523CF1404006394D5 /* SceneDelegate.swift */; };
+		6E7E714823CF1404006394D5 /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E714723CF1404006394D5 /* RepoViewController.swift */; };
+		6E7E714B23CF1404006394D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7E714923CF1404006394D5 /* Main.storyboard */; };
+		6E7E714D23CF1405006394D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7E714C23CF1405006394D5 /* Assets.xcassets */; };
+		6E7E715023CF1405006394D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7E714E23CF1405006394D5 /* LaunchScreen.storyboard */; };
+		6E7E715B23CF1406006394D5 /* UmrohTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E715A23CF1406006394D5 /* UmrohTaskTests.swift */; };
+		6E7E716623CF1406006394D5 /* UmrohTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E716523CF1406006394D5 /* UmrohTaskUITests.swift */; };
+		6E7E717523CF529B006394D5 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E717423CF529B006394D5 /* GitHub.swift */; };
+		6E7E717823CF5A0B006394D5 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E717723CF5A0B006394D5 /* RepoModel.swift */; };
+		6E7E717B23CF644E006394D5 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E717A23CF644E006394D5 /* UIViewExt.swift */; };
+		6E7E717F23CF683F006394D5 /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E717E23CF683F006394D5 /* UILabelExt.swift */; };
+		6E7E718323CF6A0D006394D5 /* UIStackViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E718223CF6A0D006394D5 /* UIStackViewExt.swift */; };
+		6E7E718A23CF6EAA006394D5 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E718923CF6EAA006394D5 /* RepoViewModel.swift */; };
+		6E7E718D23CF9014006394D5 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E718C23CF9014006394D5 /* RepoCell.swift */; };
+		6E7E718F23D00CE2006394D5 /* UITableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E718E23D00CE2006394D5 /* UITableViewExt.swift */; };
+		6E7E719123D01EAB006394D5 /* UIScrollViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7E719023D01EAB006394D5 /* UIScrollViewExt.swift */; };
+		BF70C09C705DA399F7FF8257 /* Pods_UmrohTask_UmrohTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475B5AEFA6F2E5500163A60D /* Pods_UmrohTask_UmrohTaskUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E7E715723CF1406006394D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E7E713823CF1404006394D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E7E713F23CF1404006394D5;
+			remoteInfo = UmrohTask;
+		};
+		6E7E716223CF1406006394D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E7E713823CF1404006394D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E7E713F23CF1404006394D5;
+			remoteInfo = UmrohTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		086384D0A84412BF2E2385F2 /* Pods-UmrohTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmrohTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-UmrohTaskTests/Pods-UmrohTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26722B8CB402C069F866EB25 /* Pods_UmrohTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UmrohTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		322A16BAAC7ADAE231D83255 /* Pods-UmrohTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmrohTaskTests.release.xcconfig"; path = "Target Support Files/Pods-UmrohTaskTests/Pods-UmrohTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		475B5AEFA6F2E5500163A60D /* Pods_UmrohTask_UmrohTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UmrohTask_UmrohTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7E714023CF1404006394D5 /* UmrohTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UmrohTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7E714323CF1404006394D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E7E714523CF1404006394D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E7E714723CF1404006394D5 /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepoViewController.swift; path = ../RepoViewController.swift; sourceTree = "<group>"; };
+		6E7E714A23CF1404006394D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E7E714C23CF1405006394D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E7E714F23CF1405006394D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E7E715123CF1405006394D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7E715623CF1406006394D5 /* UmrohTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmrohTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7E715A23CF1406006394D5 /* UmrohTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmrohTaskTests.swift; sourceTree = "<group>"; };
+		6E7E715C23CF1406006394D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7E716123CF1406006394D5 /* UmrohTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmrohTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7E716523CF1406006394D5 /* UmrohTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmrohTaskUITests.swift; sourceTree = "<group>"; };
+		6E7E716723CF1406006394D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7E717423CF529B006394D5 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
+		6E7E717723CF5A0B006394D5 /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		6E7E717A23CF644E006394D5 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		6E7E717E23CF683F006394D5 /* UILabelExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExt.swift; sourceTree = "<group>"; };
+		6E7E718223CF6A0D006394D5 /* UIStackViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExt.swift; sourceTree = "<group>"; };
+		6E7E718923CF6EAA006394D5 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
+		6E7E718C23CF9014006394D5 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		6E7E718E23D00CE2006394D5 /* UITableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExt.swift; sourceTree = "<group>"; };
+		6E7E719023D01EAB006394D5 /* UIScrollViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExt.swift; sourceTree = "<group>"; };
+		71BD5928096E96CE42A75A73 /* Pods_UmrohTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UmrohTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87ADCF62C769F3060BE90AAB /* Pods-UmrohTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmrohTask.debug.xcconfig"; path = "Target Support Files/Pods-UmrohTask/Pods-UmrohTask.debug.xcconfig"; sourceTree = "<group>"; };
+		8882790311CD8B4B9ADBECCB /* Pods-UmrohTask-UmrohTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmrohTask-UmrohTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-UmrohTask-UmrohTaskUITests/Pods-UmrohTask-UmrohTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BBF222ADE9F015018BD94C9 /* Pods-UmrohTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmrohTask.release.xcconfig"; path = "Target Support Files/Pods-UmrohTask/Pods-UmrohTask.release.xcconfig"; sourceTree = "<group>"; };
+		A6798A270CB9789A68E1D020 /* Pods-UmrohTask-UmrohTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmrohTask-UmrohTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-UmrohTask-UmrohTaskUITests/Pods-UmrohTask-UmrohTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD3871B3B76E454FA877F16F /* Pods-UmrohTask-UmrohTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmrohTask-UmrohTaskTests.release.xcconfig"; path = "Target Support Files/Pods-UmrohTask-UmrohTaskTests/Pods-UmrohTask-UmrohTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		D608F4A23597919B611370E4 /* Pods-UmrohTask-UmrohTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmrohTask-UmrohTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-UmrohTask-UmrohTaskTests/Pods-UmrohTask-UmrohTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E7E713D23CF1404006394D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAB7768AD29E0B790DD4D0E /* Pods_UmrohTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7E715323CF1406006394D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B09988DEA3116FA1DE14C4 /* Pods_UmrohTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7E715E23CF1406006394D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF70C09C705DA399F7FF8257 /* Pods_UmrohTask_UmrohTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009EE4209ED76EF80C0C6DA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87ADCF62C769F3060BE90AAB /* Pods-UmrohTask.debug.xcconfig */,
+				9BBF222ADE9F015018BD94C9 /* Pods-UmrohTask.release.xcconfig */,
+				8882790311CD8B4B9ADBECCB /* Pods-UmrohTask-UmrohTaskUITests.debug.xcconfig */,
+				A6798A270CB9789A68E1D020 /* Pods-UmrohTask-UmrohTaskUITests.release.xcconfig */,
+				086384D0A84412BF2E2385F2 /* Pods-UmrohTaskTests.debug.xcconfig */,
+				322A16BAAC7ADAE231D83255 /* Pods-UmrohTaskTests.release.xcconfig */,
+				D608F4A23597919B611370E4 /* Pods-UmrohTask-UmrohTaskTests.debug.xcconfig */,
+				CD3871B3B76E454FA877F16F /* Pods-UmrohTask-UmrohTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6E7E713723CF1404006394D5 = {
+			isa = PBXGroup;
+			children = (
+				6E7E714223CF1404006394D5 /* UmrohTask */,
+				6E7E715923CF1406006394D5 /* UmrohTaskTests */,
+				6E7E716423CF1406006394D5 /* UmrohTaskUITests */,
+				6E7E714123CF1404006394D5 /* Products */,
+				009EE4209ED76EF80C0C6DA9 /* Pods */,
+				770CDEEDC38BE003849E7D7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E7E714123CF1404006394D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E714023CF1404006394D5 /* UmrohTask.app */,
+				6E7E715623CF1406006394D5 /* UmrohTaskTests.xctest */,
+				6E7E716123CF1406006394D5 /* UmrohTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E7E714223CF1404006394D5 /* UmrohTask */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E718B23CF8F75006394D5 /* View */,
+				6E7E718823CF6E9C006394D5 /* ViewModel */,
+				6E7E717923CF642A006394D5 /* Extension */,
+				6E7E717623CF59FF006394D5 /* Model */,
+				6E7E717323CF5282006394D5 /* Network */,
+				6E7E714323CF1404006394D5 /* AppDelegate.swift */,
+				6E7E714523CF1404006394D5 /* SceneDelegate.swift */,
+				6E7E714923CF1404006394D5 /* Main.storyboard */,
+				6E7E714C23CF1405006394D5 /* Assets.xcassets */,
+				6E7E714E23CF1405006394D5 /* LaunchScreen.storyboard */,
+				6E7E715123CF1405006394D5 /* Info.plist */,
+			);
+			path = UmrohTask;
+			sourceTree = "<group>";
+		};
+		6E7E715923CF1406006394D5 /* UmrohTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E715A23CF1406006394D5 /* UmrohTaskTests.swift */,
+				6E7E715C23CF1406006394D5 /* Info.plist */,
+			);
+			path = UmrohTaskTests;
+			sourceTree = "<group>";
+		};
+		6E7E716423CF1406006394D5 /* UmrohTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E716523CF1406006394D5 /* UmrohTaskUITests.swift */,
+				6E7E716723CF1406006394D5 /* Info.plist */,
+			);
+			path = UmrohTaskUITests;
+			sourceTree = "<group>";
+		};
+		6E7E717323CF5282006394D5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E717423CF529B006394D5 /* GitHub.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6E7E717623CF59FF006394D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E717723CF5A0B006394D5 /* RepoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E7E717923CF642A006394D5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E717A23CF644E006394D5 /* UIViewExt.swift */,
+				6E7E717E23CF683F006394D5 /* UILabelExt.swift */,
+				6E7E718223CF6A0D006394D5 /* UIStackViewExt.swift */,
+				6E7E718E23D00CE2006394D5 /* UITableViewExt.swift */,
+				6E7E719023D01EAB006394D5 /* UIScrollViewExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6E7E718823CF6E9C006394D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E718923CF6EAA006394D5 /* RepoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6E7E718B23CF8F75006394D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E718C23CF9014006394D5 /* RepoCell.swift */,
+				6E7E714723CF1404006394D5 /* RepoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		770CDEEDC38BE003849E7D7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26722B8CB402C069F866EB25 /* Pods_UmrohTask.framework */,
+				475B5AEFA6F2E5500163A60D /* Pods_UmrohTask_UmrohTaskUITests.framework */,
+				71BD5928096E96CE42A75A73 /* Pods_UmrohTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E7E713F23CF1404006394D5 /* UmrohTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7E716A23CF1406006394D5 /* Build configuration list for PBXNativeTarget "UmrohTask" */;
+			buildPhases = (
+				17FDCB07C64D6B7A3191CBD4 /* [CP] Check Pods Manifest.lock */,
+				6E7E713C23CF1404006394D5 /* Sources */,
+				6E7E713D23CF1404006394D5 /* Frameworks */,
+				6E7E713E23CF1404006394D5 /* Resources */,
+				545A9E67CEE821CE1521F460 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UmrohTask;
+			productName = UmrohTask;
+			productReference = 6E7E714023CF1404006394D5 /* UmrohTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E7E715523CF1406006394D5 /* UmrohTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7E716D23CF1406006394D5 /* Build configuration list for PBXNativeTarget "UmrohTaskTests" */;
+			buildPhases = (
+				93838EFDFDE3F827FBDF42C7 /* [CP] Check Pods Manifest.lock */,
+				6E7E715223CF1406006394D5 /* Sources */,
+				6E7E715323CF1406006394D5 /* Frameworks */,
+				6E7E715423CF1406006394D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E7E715823CF1406006394D5 /* PBXTargetDependency */,
+			);
+			name = UmrohTaskTests;
+			productName = UmrohTaskTests;
+			productReference = 6E7E715623CF1406006394D5 /* UmrohTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E7E716023CF1406006394D5 /* UmrohTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7E717023CF1406006394D5 /* Build configuration list for PBXNativeTarget "UmrohTaskUITests" */;
+			buildPhases = (
+				C1C42563296332DFA9DB7433 /* [CP] Check Pods Manifest.lock */,
+				6E7E715D23CF1406006394D5 /* Sources */,
+				6E7E715E23CF1406006394D5 /* Frameworks */,
+				6E7E715F23CF1406006394D5 /* Resources */,
+				664FF5AE6A003A0CFB7CC622 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E7E716323CF1406006394D5 /* PBXTargetDependency */,
+			);
+			name = UmrohTaskUITests;
+			productName = UmrohTaskUITests;
+			productReference = 6E7E716123CF1406006394D5 /* UmrohTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E7E713823CF1404006394D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Demmy Dwi Rhamadan";
+				TargetAttributes = {
+					6E7E713F23CF1404006394D5 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					6E7E715523CF1406006394D5 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6E7E713F23CF1404006394D5;
+					};
+					6E7E716023CF1406006394D5 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6E7E713F23CF1404006394D5;
+					};
+				};
+			};
+			buildConfigurationList = 6E7E713B23CF1404006394D5 /* Build configuration list for PBXProject "UmrohTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E7E713723CF1404006394D5;
+			productRefGroup = 6E7E714123CF1404006394D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E7E713F23CF1404006394D5 /* UmrohTask */,
+				6E7E715523CF1406006394D5 /* UmrohTaskTests */,
+				6E7E716023CF1406006394D5 /* UmrohTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E7E713E23CF1404006394D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E715023CF1405006394D5 /* LaunchScreen.storyboard in Resources */,
+				6E7E714D23CF1405006394D5 /* Assets.xcassets in Resources */,
+				6E7E714B23CF1404006394D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7E715423CF1406006394D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7E715F23CF1406006394D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17FDCB07C64D6B7A3191CBD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UmrohTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		545A9E67CEE821CE1521F460 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UmrohTask/Pods-UmrohTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UmrohTask/Pods-UmrohTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UmrohTask/Pods-UmrohTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		664FF5AE6A003A0CFB7CC622 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UmrohTask-UmrohTaskUITests/Pods-UmrohTask-UmrohTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UmrohTask-UmrohTaskUITests/Pods-UmrohTask-UmrohTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UmrohTask-UmrohTaskUITests/Pods-UmrohTask-UmrohTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93838EFDFDE3F827FBDF42C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UmrohTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C42563296332DFA9DB7433 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UmrohTask-UmrohTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E7E713C23CF1404006394D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E718D23CF9014006394D5 /* RepoCell.swift in Sources */,
+				6E7E717B23CF644E006394D5 /* UIViewExt.swift in Sources */,
+				6E7E718A23CF6EAA006394D5 /* RepoViewModel.swift in Sources */,
+				6E7E714823CF1404006394D5 /* RepoViewController.swift in Sources */,
+				6E7E714423CF1404006394D5 /* AppDelegate.swift in Sources */,
+				6E7E717523CF529B006394D5 /* GitHub.swift in Sources */,
+				6E7E718F23D00CE2006394D5 /* UITableViewExt.swift in Sources */,
+				6E7E718323CF6A0D006394D5 /* UIStackViewExt.swift in Sources */,
+				6E7E719123D01EAB006394D5 /* UIScrollViewExt.swift in Sources */,
+				6E7E717823CF5A0B006394D5 /* RepoModel.swift in Sources */,
+				6E7E717F23CF683F006394D5 /* UILabelExt.swift in Sources */,
+				6E7E714623CF1404006394D5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7E715223CF1406006394D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E715B23CF1406006394D5 /* UmrohTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E7E715D23CF1406006394D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7E716623CF1406006394D5 /* UmrohTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E7E715823CF1406006394D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E7E713F23CF1404006394D5 /* UmrohTask */;
+			targetProxy = 6E7E715723CF1406006394D5 /* PBXContainerItemProxy */;
+		};
+		6E7E716323CF1406006394D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E7E713F23CF1404006394D5 /* UmrohTask */;
+			targetProxy = 6E7E716223CF1406006394D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E7E714923CF1404006394D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E7E714A23CF1404006394D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E7E714E23CF1405006394D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E7E714F23CF1405006394D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E7E716823CF1406006394D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E7E716923CF1406006394D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E7E716B23CF1406006394D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87ADCF62C769F3060BE90AAB /* Pods-UmrohTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T6Z33X3GB;
+				INFOPLIST_FILE = UmrohTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UmrohTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6E7E716C23CF1406006394D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BBF222ADE9F015018BD94C9 /* Pods-UmrohTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T6Z33X3GB;
+				INFOPLIST_FILE = UmrohTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UmrohTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6E7E716E23CF1406006394D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086384D0A84412BF2E2385F2 /* Pods-UmrohTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T6Z33X3GB;
+				INFOPLIST_FILE = UmrohTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UmrohTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UmrohTask.app/UmrohTask";
+			};
+			name = Debug;
+		};
+		6E7E716F23CF1406006394D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 322A16BAAC7ADAE231D83255 /* Pods-UmrohTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T6Z33X3GB;
+				INFOPLIST_FILE = UmrohTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UmrohTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UmrohTask.app/UmrohTask";
+			};
+			name = Release;
+		};
+		6E7E717123CF1406006394D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8882790311CD8B4B9ADBECCB /* Pods-UmrohTask-UmrohTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T6Z33X3GB;
+				INFOPLIST_FILE = UmrohTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UmrohTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UmrohTask;
+			};
+			name = Debug;
+		};
+		6E7E717223CF1406006394D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6798A270CB9789A68E1D020 /* Pods-UmrohTask-UmrohTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T6Z33X3GB;
+				INFOPLIST_FILE = UmrohTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.UmrohTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UmrohTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E7E713B23CF1404006394D5 /* Build configuration list for PBXProject "UmrohTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7E716823CF1406006394D5 /* Debug */,
+				6E7E716923CF1406006394D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7E716A23CF1406006394D5 /* Build configuration list for PBXNativeTarget "UmrohTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7E716B23CF1406006394D5 /* Debug */,
+				6E7E716C23CF1406006394D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7E716D23CF1406006394D5 /* Build configuration list for PBXNativeTarget "UmrohTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7E716E23CF1406006394D5 /* Debug */,
+				6E7E716F23CF1406006394D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7E717023CF1406006394D5 /* Build configuration list for PBXNativeTarget "UmrohTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7E717123CF1406006394D5 /* Debug */,
+				6E7E717223CF1406006394D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E7E713823CF1404006394D5 /* Project object */;
+}
